@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My First HTML Form</title>
+	</head>
+	<body>
+		<h2>Login Form</h2>
+		<form method="POST" action="http://requestb.in/1f98do71">
+    		<p>
+        		<label for="username">Username</label>
+        		<input id="username" name="username" type="text" placeholder="Enter username here">
+        	
+    		</p>
+    		<p>
+        		<label for="password">Password</label>
+        		<input id="password" name="password" type="password" placeholder="Enter password here">
+    		</p>
+    		<p>
+        		<input type="submit" name="SUBMIT" value="Login">
+    		</p>
+		</form>
+		<h2>Compose an Email</h2>
+		<form method="POST" action="http://requestb.in/1f98do71">
+			<p>
+				<label for="subject">Subject</label>
+				<input id="subject" name="subject" type="text">
+			</p>
+			<p>
+				<label for="body">Body</label>
+				<textarea id="body" name="body" rows="5" cols="40"></textarea>
+			</p>
+			<p><input type="checkbox" id="save_copy" name="save_copy" value="yes" checked>
+			<label for="save_copy">Save copy to sent folder</label>
+			</p>
+			<p>
+				<button type="submit">Send</button>
+			</p>
+			<h2>Checkbox and Radio</h2>
+			<form method="POST" action="http://requestb.in/1f98do71">
+			<input type="checkbox" id="mailing_list" name="mailing_list" value="yes" checked>
+			<label for="mailing_list">Sign me up for the mailing list!</label>
+
+			<p>What operating systems have you used?</p>
+			<label><input type="checkbox" id="os1" name="os[]" value="linux"> Linux</label>
+			<label><input type="checkbox" id="os2" name="os[]" value="osx"> OS X</label>
+			<label><input type="checkbox" id="os3" name="os[]" value="windows"> Windows</label>
+
+			<p>What is the capital of Texas?</p>
+			<label>
+				<input type="radio" name="q1" value="houston">Houston
+			</label>
+			<label>
+				<input type="radio" name="q1" value="dallas">Dallas
+			</label>
+			<label>
+				<input type="radio" name="q1" value="austin">Austin
+			</label>
+			<label>
+				<input type="radio" name="q1" value="san antonio">San Antonio
+			</label>
+
+			<button type="submit">Sign me up!</button>
+			</form>
+
+			<h2>Multiple Choice Test</h2>
+			<form method="POST" action="http://requestb.in/1f98do71">
+				<p>What is San Antonio?</p>
+				<label>
+					<input type="radio" name="q1" value="city">City
+				</label>
+				<label>
+					<input type="radio" name="q1" value="state">State
+				</label>
+				<label>
+					<input type="radio" name="q1" value="country">Country
+				</label>
+				<p>What is our nation's capital?</p>
+				<label>
+					<input type="radio" name="q2" value="washington state">Washington State
+				</label>
+				<label>
+				<input type="radio" name="q2" value="washington dc">Washington DC
+				</label>
+				<label>
+					<input type="radio" name="q2" value="texas">Texas
+				</label>
+				<p>Which of the following are states?</p>
+				<label><input type="checkbox" id="a1" name="a[]" value="alaska">Alaska</label>
+				<label><input type="checkbox" id="a2" name="a[]" value="texas">Texas</label>
+				<label><input type="checkbox" id="a3" name="a[]" value="maine">Maine</label>
+				<label><input type="checkbox" id="a4" name="a[]" value="boston">Boston</label>
+			</form>	
+			<h2>Form Test</h2>
+			<form method="POST" action="http://requestb.in/1f98do71">
+				<label for="transmission">Select your transmission type: </label>
+				<select id="transmission" name="transmission">
+					<option>Automatic</option>
+					<option selected>Manual</option>
+				</select>
+
+				<button type="submit">Submit</button>
+			</form>	
+			<h2>Select Testing</h2>
+			<form method="POST" action="http://requestb.in/1f98do71">
+				<label for="school">Are you currently enrolled in school? </label>
+				<select id="school" name="school">
+					<option value="1">Yes</option>
+					<option selected value="0">No</option>
+				</select>
+				<div>
+					<label for="gs">What gaming system(s) do you use?</label>
+					<select id="gs" name="gs[]" multiple>
+						<option value="xbox">Xbox</option>
+						<option value="ps4">PS4</option>
+						<option value="pc">PC</option>
+					</select>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+	</body>
+</html>
